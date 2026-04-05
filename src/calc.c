@@ -10,6 +10,6 @@ float mul(float fn, float sn){
     return fn * sn;
 }
 
-float div(float fn, float sn){
+float divide(float fn, float sn){
     return fn / sn;
 }

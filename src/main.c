@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <windows.h>
 #include "calc.h"
 #include "parser.h"
 
 int main(){
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
     float first_number;
     float second_number;
     int choose;
@@ -33,7 +36,7 @@ int main(){
             printf("You cant divide by 0! ");
             return 1;
         }else{
-            result = div(first_number, second_number);
+            result = divide(first_number, second_number);
             printf("Your division result is: %.2f", result);
         }
         break;
