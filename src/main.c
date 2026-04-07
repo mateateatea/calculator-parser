@@ -2,8 +2,9 @@
 #include <windows.h>
 #include "calc.h"
 #include "parser.h"
+#include "gui.h"
 
-int main(){
+/*int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
     float first_number;
@@ -47,5 +48,10 @@ int main(){
     default:
         break;
     }
+    return 0;
+}*/
+
+int main(){
+    start_gui();
     return 0;
 }
