@@ -1,11 +1,17 @@
 #include <stdio.h>
+#ifdef _WIN32
 #include <windows.h>
+#else
+#include <unistd.h>
+#endif
 #include "calc.h"
 #include "parser.h"
 
 int main(){
+#ifdef _WIN32
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
+#endif
     float first_number;
     float second_number;
     int choose;
@@ -47,5 +53,8 @@ int main(){
     default:
         break;
     }
+#ifndef _WIN32
+    printf("\n");
+#endif
     return 0;
 }
