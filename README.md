@@ -14,8 +14,10 @@ To compile this project from source, you need the [MSYS2](https://www.msys2.org/
 
 1. Open your **MSYS2 UCRT64** terminal (yellow icon).
 2. Install the required compiler, Make, and the Allegro 5 library:
-   pacman -S mingw-w64-ucrt-x86_64-gcc make mingw-w64-ucrt-x86_64-allegro
+    ```bash
+   pacman -S mingw-w64-ucrt-x86_64-gcc make mingw-w64-ucrt-x86_64-allegro```
 3. Clone this repo and navigate to the project folder
 4. Build the project using Make
 5. Run the application:
-    ./calculator_with_parser.exe
+    ```bash
+    ./calculator_with_parser.exe```
