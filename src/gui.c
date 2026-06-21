@@ -15,6 +15,7 @@ int start_gui(){
     al_init_primitives_addon();
     al_init_font_addon();
     al_init_ttf_addon();
+    al_set_new_display_flags(ALLEGRO_WINDOWED | ALLEGRO_OPENGL); 
     ALLEGRO_DISPLAY *display = al_create_display(430, 784);
     ALLEGRO_EVENT_QUEUE *queue = al_create_event_queue();
     ALLEGRO_FONT *font = al_load_ttf_font("Inter-VariableFont_opsz,wght.ttf", 32, 0);
