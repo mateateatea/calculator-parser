@@ -31,14 +31,12 @@ int start_gui(){
         int spacing = 20;
 
         const char *labels[5][4] = {
-            {"AC", "+/-", "%", "/"},
+            {"AC", "+/-", "^", "/"},
             {"7", "8", "9", "*"},
             {"4", "5", "6", "-"},
             {"1", "2", "3", "+"},
             {"C", "0", ".", "="} 
         };
-// To narysuje to, co aktualnie jest w pamięci kalkulatora
-// 390 to prawa krawędź (wyrównanie do prawej), 150 to wysokość
 al_draw_text(font, al_map_rgb(255, 255, 255), 390, 150, ALLEGRO_ALIGN_RIGHT, expression);
        
         for (int row = 0; row < 5; row++) {
